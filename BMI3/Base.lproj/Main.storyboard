@@ -401,10 +401,10 @@
             </objects>
             <point key="canvasLocation" x="332.25" y="355.5"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="jWC-Ss-ygk">
             <objects>
-                <viewController id="ebN-Lx-p65" sceneMemberID="viewController">
+                <viewController id="ebN-Lx-p65" customClass="BMIAboutViewController" customModule="BMI3" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lDy-Xn-ssl"/>
                         <viewControllerLayoutGuide type="bottom" id="05A-aY-jh6"/>
@@ -416,21 +416,31 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tc4-gc-MrK">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <state key="normal" title="Dismiss"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                </variation>
+                                <connections>
+                                    <action selector="DoDismiss:" destination="ebN-Lx-p65" eventType="touchUpInside" id="9Y9-BG-Rol"/>
+                                </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kbj-ip-Ant">
-                                <rect key="frame" x="34" y="224" width="332" height="331"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kbj-ip-Ant">
+                                <rect key="frame" x="34" y="224" width="496" height="270"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iOS Development in Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-Tp-g1g">
-                                        <rect key="frame" x="69" y="20" width="194" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="iOS Development in Swift" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEL-Tp-g1g">
+                                        <rect key="frame" x="0.0" y="0.0" width="194" height="270"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <nil key="highlightedColor"/>
                                         <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
                                             <rect key="frame" x="49" y="0.0" width="194" height="21"/>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="315" height="34"/>
+                                        </variation>
                                     </label>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-4A-vFl">
-                                        <rect key="frame" x="20" y="41" width="292" height="270"/>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" misplaced="YES" image="Square" translatesAutoresizingMaskIntoConstraints="NO" id="Amb-4A-vFl">
+                                        <rect key="frame" x="204" y="0.0" width="292" height="270"/>
                                         <constraints>
                                             <constraint firstAttribute="width" secondItem="Amb-4A-vFl" secondAttribute="height" multiplier="146:135" id="jce-dy-maX"/>
                                         </constraints>
@@ -445,17 +455,27 @@
                                                 <include reference="jce-dy-maX"/>
                                             </mask>
                                         </variation>
+                                        <variation key="heightClass=regular-widthClass=regular" misplaced="YES">
+                                            <rect key="frame" x="0.0" y="64" width="315" height="270"/>
+                                        </variation>
                                     </imageView>
                                 </subviews>
                                 <variation key="heightClass=regular-widthClass=compact" alignment="center" axis="vertical" misplaced="YES">
                                     <rect key="frame" x="54" y="160" width="292" height="301"/>
                                 </variation>
+                                <variation key="heightClass=regular-widthClass=regular" axis="vertical" misplaced="YES" spacing="30">
+                                    <rect key="frame" x="243" y="144" width="315" height="334"/>
+                                </variation>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="kbj-ip-Ant" firstAttribute="centerY" secondItem="aP3-8G-Fj8" secondAttribute="centerY" id="550-Se-uMf"/>
+                            <constraint firstItem="kbj-ip-Ant" firstAttribute="centerX" secondItem="aP3-8G-Fj8" secondAttribute="centerX" id="FGD-9V-56K"/>
                             <constraint firstItem="kbj-ip-Ant" firstAttribute="centerX" secondItem="aP3-8G-Fj8" secondAttribute="centerX" id="GDw-WU-1co"/>
-                            <constraint firstItem="05A-aY-jh6" firstAttribute="top" secondItem="tc4-gc-MrK" secondAttribute="bottom" constant="20" id="RvQ-cv-6TJ"/>
+                            <constraint firstItem="05A-aY-jh6" firstAttribute="top" secondItem="tc4-gc-MrK" secondAttribute="bottom" constant="20" id="RvQ-cv-6TJ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="40"/>
+                            </constraint>
                             <constraint firstItem="kbj-ip-Ant" firstAttribute="centerY" secondItem="aP3-8G-Fj8" secondAttribute="centerY" id="VFb-wu-bPx"/>
                             <constraint firstItem="tc4-gc-MrK" firstAttribute="centerX" secondItem="aP3-8G-Fj8" secondAttribute="centerX" id="eop-SD-Hh8"/>
                         </constraints>
@@ -464,10 +484,8 @@
                                 <exclude reference="tc4-gc-MrK"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="GDw-WU-1co"/>
-                                <exclude reference="VFb-wu-bPx"/>
-                                <exclude reference="eop-SD-Hh8"/>
-                                <exclude reference="RvQ-cv-6TJ"/>
+                                <exclude reference="550-Se-uMf"/>
+                                <exclude reference="FGD-9V-56K"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -475,16 +493,23 @@
                                 <include reference="tc4-gc-MrK"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="eop-SD-Hh8"/>
                                 <include reference="GDw-WU-1co"/>
                                 <include reference="VFb-wu-bPx"/>
-                                <include reference="eop-SD-Hh8"/>
                                 <include reference="RvQ-cv-6TJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
+                            <mask key="subviews">
+                                <include reference="tc4-gc-MrK"/>
+                            </mask>
                             <mask key="constraints">
+                                <include reference="eop-SD-Hh8"/>
+                                <include reference="550-Se-uMf"/>
+                                <include reference="FGD-9V-56K"/>
                                 <include reference="GDw-WU-1co"/>
                                 <include reference="VFb-wu-bPx"/>
+                                <include reference="RvQ-cv-6TJ"/>
                             </mask>
                         </variation>
                     </view>
