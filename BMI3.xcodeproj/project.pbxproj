@@ -14,6 +14,7 @@
 		3D43F2B71CAB933600DB6C35 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D43F2B51CAB933600DB6C35 /* LaunchScreen.storyboard */; };
 		3D43F2C21CAB933600DB6C35 /* BMI3Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43F2C11CAB933600DB6C35 /* BMI3Tests.swift */; };
 		3D43F2CD1CAB933600DB6C35 /* BMI3UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D43F2CC1CAB933600DB6C35 /* BMI3UITests.swift */; };
+		D3E5E6EA1D0144EE0096ED17 /* About.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D3E5E6E91D0144EE0096ED17 /* About.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3D43F2C81CAB933600DB6C35 /* BMI3UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BMI3UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D43F2CC1CAB933600DB6C35 /* BMI3UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMI3UITests.swift; sourceTree = "<group>"; };
 		3D43F2CE1CAB933600DB6C35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3E5E6E91D0144EE0096ED17 /* About.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = About.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3D43F2AC1CAB933600DB6C35 /* AppDelegate.swift */,
 				3D43F2AE1CAB933600DB6C35 /* ViewController.swift */,
 				3D43F2B01CAB933600DB6C35 /* Main.storyboard */,
+				D3E5E6E91D0144EE0096ED17 /* About.xcassets */,
 				3D43F2B31CAB933600DB6C35 /* Assets.xcassets */,
 				3D43F2B51CAB933600DB6C35 /* LaunchScreen.storyboard */,
 				3D43F2B81CAB933600DB6C35 /* Info.plist */,
@@ -231,6 +234,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D43F2B71CAB933600DB6C35 /* LaunchScreen.storyboard in Resources */,
+				D3E5E6EA1D0144EE0096ED17 /* About.xcassets in Resources */,
 				3D43F2B41CAB933600DB6C35 /* Assets.xcassets in Resources */,
 				3D43F2B21CAB933600DB6C35 /* Main.storyboard in Resources */,
 			);
