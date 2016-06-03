@@ -470,8 +470,6 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="kbj-ip-Ant" firstAttribute="centerY" secondItem="aP3-8G-Fj8" secondAttribute="centerY" id="550-Se-uMf"/>
-                            <constraint firstItem="kbj-ip-Ant" firstAttribute="centerX" secondItem="aP3-8G-Fj8" secondAttribute="centerX" id="FGD-9V-56K"/>
                             <constraint firstItem="kbj-ip-Ant" firstAttribute="centerX" secondItem="aP3-8G-Fj8" secondAttribute="centerX" id="GDw-WU-1co"/>
                             <constraint firstItem="05A-aY-jh6" firstAttribute="top" secondItem="tc4-gc-MrK" secondAttribute="bottom" constant="20" id="RvQ-cv-6TJ">
                                 <variation key="heightClass=regular-widthClass=regular" constant="40"/>
@@ -483,32 +481,28 @@
                             <mask key="subviews">
                                 <exclude reference="tc4-gc-MrK"/>
                             </mask>
-                            <mask key="constraints">
-                                <exclude reference="550-Se-uMf"/>
-                                <exclude reference="FGD-9V-56K"/>
-                            </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
                             <mask key="subviews">
                                 <include reference="tc4-gc-MrK"/>
+                                <include reference="kbj-ip-Ant"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="eop-SD-Hh8"/>
                                 <include reference="GDw-WU-1co"/>
                                 <include reference="VFb-wu-bPx"/>
+                                <include reference="eop-SD-Hh8"/>
                                 <include reference="RvQ-cv-6TJ"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=regular">
                             <mask key="subviews">
                                 <include reference="tc4-gc-MrK"/>
+                                <include reference="kbj-ip-Ant"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="eop-SD-Hh8"/>
-                                <include reference="550-Se-uMf"/>
-                                <include reference="FGD-9V-56K"/>
                                 <include reference="GDw-WU-1co"/>
                                 <include reference="VFb-wu-bPx"/>
+                                <include reference="eop-SD-Hh8"/>
                                 <include reference="RvQ-cv-6TJ"/>
                             </mask>
                         </variation>
